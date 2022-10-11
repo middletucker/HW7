@@ -27,5 +27,7 @@ int main()
 void time(int seconds, int &hours, int &mins, int &secs)
 {
   hours = seconds/3600;
+  mins = (seconds % 3600) / 60;
+  secs = (seconds % 3600) % 60;
 
 }
