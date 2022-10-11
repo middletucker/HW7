@@ -25,6 +25,7 @@ int main() {
   double currentT = 0, powerT = 0;
 
   for (int i = 0; i < 5; i++) {
+    cout << "Enter value for current " << i + 1 << endl;
     cin >> current[i];
 
     power[i] = resistance[i] * pow(current[i], 2);
@@ -38,9 +39,9 @@ int main() {
        << "Power\n";
 
   for (int j = 0; j < 5; j++) {
-    cout << left << setw(15) << resistance[j] << setw(15) << current[j]
+    cout << setw(15) << left << resistance[j] << setw(15) << current[j]
          << setw(15) << power[j] << endl;
   }
-  cout << left << setw(15) << "Total: " << resistanceT << setw(15) << currentT
+  cout << left << "Total: " << setw(8) << resistanceT << setw(15) << currentT
        << setw(15) << powerT << endl;
 }
