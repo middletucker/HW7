@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int SpaceJunk();
+int SpaceJunk(int n);
 
 int main() {
   int i, n, days;
@@ -12,13 +12,13 @@ int main() {
 
   cin >> n;
 
-  days = SpaceJunk();
+  days = SpaceJunk(n);
 
   cout << days << endl;
 }
 
-int SpaceJunk() {
-  int n, i, days, minimum;
+int SpaceJunk(int n) {
+  int i, days, minimum;
   int junk[n];
 
   for (i = 0; i < n; i++) {
