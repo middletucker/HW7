@@ -4,7 +4,7 @@ This game is unfinished. Follow along with CSCI130_RockPaperScissors2.pdf to com
 Last Modified by: Lillian Tucker
 Last Modified on: 10/2020
 ******************************************************************************/
-// changed winner affirmations to incorporate arrays
+// changed winner affirmations to incorporate arrays Celebrate();
 
 #include <cmath>
 #include <cstdlib>
@@ -69,6 +69,7 @@ int main() {
   else
     cout << "Error \n";
   // HANDOUT (PART C): Randomly display celebratory messages if user won.
+  // edited for array
   if (userResult == 'W') {
     CelebratoryPhrase = Celebrate();
     cout << CelebratoryPhrase << endl;
